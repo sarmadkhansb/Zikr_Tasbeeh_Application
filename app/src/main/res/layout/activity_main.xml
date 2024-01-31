@@ -72,30 +72,32 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="increment"
+        android:id="@+id/inc"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintBottom_toTopOf="@id/add_newZikr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white"
+        android:layout_marginRight="20dp" />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:layout_marginRight="20dp"
         android:onClick="reset"
-        android:backgroundTint="@color/design_default_color_error"
+        android:backgroundTint="#A41B11"
         app:fabSize= "mini"
+        app:backgroundTint="@color/white"
         android:id="@+id/reset"
-        android:src="@drawable/ic_baseline_add_24"
-        app:layout_constraintBottom_toTopOf="@id/add_newZikr"
-        app:layout_constraintEnd_toStartOf="@id/reset"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:tint="@color/white" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginRight="20dp"
-        android:onClick=""
-        android:id="@+id/inc"
-        android:src="@drawable/ic_baseline_add_24"
-        app:layout_constraintBottom_toTopOf="@id/add_newZikr"
+        android:src="@drawable/ic_baseline_settings_backup_restore_24"
+        app:layout_constraintBottom_toTopOf="@id/inc"
         app:layout_constraintEnd_toEndOf="parent"
         app:tint="@color/white" />
 

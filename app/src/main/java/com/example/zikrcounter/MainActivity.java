@@ -40,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
         cardMinMaxCounterTxt = findViewById(R.id.card_min_Max);
         animation = findViewById(R.id.animation);
 
+        cardZikrTxt.setText("");
+        cardMinMaxCounterTxt.setText("Select Check Boxes and Click + to Start");
+        text.setText("Start");
+
 
         //Adding Zikrs to recycler List here onwards
 
@@ -107,5 +111,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void reset(View view) {
+        cardZikrTxt.setText("");
+        cardMinMaxCounterTxt.setText("Select Check Boxes and Click + to Start");
+        text.setText("Start");
+        adapter.refreshData();
+        recyclerView.setAdapter(adapter);
     }
 }

@@ -33,6 +33,10 @@ public class ZikrAdapter extends RecyclerView.Adapter<ZikrAdapter.ViewHolder> {
 
         return listOfSelectedZikr;
     }
+    public void refreshData(){
+        listOfSelectedZikr.clear();
+        this.notifyDataSetChanged();
+    }
 
     @NonNull
     @Override
