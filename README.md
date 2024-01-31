@@ -4,7 +4,7 @@ Reset your list of Zikr,
 Alter number with respect to requirement.
 
 **Version 2.0 coming soon including:**
-Prayer timing search,
+Prayer timing search (globally),
 Prayer alarm setting,
 Background running, 
 Calender tracking of All Zikr.
