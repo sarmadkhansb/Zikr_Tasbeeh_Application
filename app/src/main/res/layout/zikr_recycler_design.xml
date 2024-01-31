@@ -15,12 +15,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:text="Zikr"
+            android:text="َسْتَغْفِرُ اللّٰه"
+            android:drawablePadding="10dp"
+            app:guidelineUseRtl="true"
+            android:button="@null"
+            android:drawableRight="?android:listChoiceIndicatorMultiple"
             android:textColor="@color/mycolor"
-            android:checked="true"
+            android:checked="false"
             android:textSize="20sp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:fontFamily="sans-serif-black"/>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -34,7 +38,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:hintEnabled="false"
             android:layout_marginEnd="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="10dp">

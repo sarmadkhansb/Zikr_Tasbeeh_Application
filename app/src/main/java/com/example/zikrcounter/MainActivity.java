@@ -47,9 +47,9 @@ public class MainActivity extends AppCompatActivity {
 
         //Adding Zikrs to recycler List here onwards
 
-        list.add(new Zikr("Astaghfirullah", 3));
-        list.add(new Zikr("Alhamdulillah", 3));
-        list.add(new Zikr("Allah hu Akbar", 5));
+        list.add(new Zikr("أَسْتَغْفِرُ اللّٰهَ", 5));
+        list.add(new Zikr(" ٱلْحَمْدُ لِلَّٰهِ", 5));
+        list.add(new Zikr("الله أكبر", 5));
 
 
         adapter = new ZikrAdapter(this,list);
@@ -77,21 +77,22 @@ public class MainActivity extends AppCompatActivity {
                 cardZikrTxt.setText("");
                 cardMinMaxCounterTxt.setText("");
                 text.setText("Completed");
+                reset(null);
         }
     }
 
     private void showAnimation(String txt){
         animation.setVisibility(View.VISIBLE);
         animation.setText(txt);
-        animation.animate().translationY(-100).alpha(0).setDuration(0600);
+        animation.animate().translationY(-150).alpha(0).setDuration(0700);
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
                 animation.setVisibility(View.GONE);
-                animation.animate().translationY(100).alpha(1).setDuration(0001);
+                animation.animate().translationY(150).alpha(1).setDuration(0001);
             }
-        },0600);
+        },0700);
 
     }
 
@@ -116,5 +117,8 @@ public class MainActivity extends AppCompatActivity {
         text.setText("Start");
         adapter.refreshData();
         recyclerView.setAdapter(adapter);
+        index =0;
+        counts = 0;
+        count = 0;
     }
 }
